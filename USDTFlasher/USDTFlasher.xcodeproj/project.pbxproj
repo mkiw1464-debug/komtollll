@@ -1,0 +1,204 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA002 /* AppDelegate.swift */; };
+		AA003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA004 /* SceneDelegate.swift */; };
+		AA005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA006 /* ViewController.swift */; };
+		AA007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA008 /* Assets.xcassets */; };
+		AA009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA010 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA004 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA010 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA012 /* USDTFlasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USDTFlasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BB001 = {
+			isa = PBXGroup;
+			children = (
+				BB002 /* USDTFlasher */,
+				BB003 /* USDTFlasherTests */,
+				BB004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB002 /* USDTFlasher */ = {
+			isa = PBXGroup;
+			children = (
+				AA002 /* AppDelegate.swift */,
+				AA004 /* SceneDelegate.swift */,
+				AA006 /* ViewController.swift */,
+				AA011 /* Info.plist */,
+				AA008 /* Assets.xcassets */,
+				AA010 /* LaunchScreen.storyboard */,
+			);
+			path = USDTFlasher;
+			sourceTree = "<group>";
+		};
+		BB003 /* USDTFlasherTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC001 /* USDTFlasherTests.swift */,
+			);
+			path = USDTFlasherTests;
+			sourceTree = "<group>";
+		};
+		BB004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA012 /* USDTFlasher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA007 /* Assets.xcassets in Resources */,
+				AA009 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA001 /* AppDelegate.swift in Sources */,
+				AA003 /* SceneDelegate.swift in Sources */,
+				AA005 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = NO;
+				INFOPLIST_FILE = USDTFlasher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usdt.flasher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = NO;
+				INFOPLIST_FILE = USDTFlasher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usdt.flasher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		GG001 /* Build configuration list for PBXProject "USDTFlasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF001 /* Debug */,
+				FF002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		GG002 /* Build configuration list for PBXNativeTarget "USDTFlasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF001 /* Debug */,
+				FF002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin PBXProject section */
+		HH001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AA012 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = GG001 /* Build configuration list for PBXProject "USDTFlasher" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB001;
+			productRefGroup = BB004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				II001 /* USDTFlasher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXNativeTarget section */
+		II001 /* USDTFlasher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = GG002 /* Build configuration list for PBXNativeTarget "USDTFlasher" */;
+			buildPhases = (
+				EE001 /* Sources */,
+				DD001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USDTFlasher;
+			productName = USDTFlasher;
+			productReference = AA012 /* USDTFlasher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+	};
+	rootObject = HH001 /* Project object */;
+}
