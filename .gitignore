@@ -1,0 +1,36 @@
+# Xcode
+.DS_Store
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcuserdata
+xcuserdata/
+*.xccheckout
+*.xcworkspace/
+!default.xcworkspace
+!default.pbxproj
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.swiftpm/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Temporary files
+*.tmp
+*.log
+*.ipa
+Payload/
