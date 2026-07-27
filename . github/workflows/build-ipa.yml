@@ -1,0 +1,52 @@
+name: Build USDT Flasher IPA
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Xcode
+      run: |
+        sudo xcode-select -switch /Applications/Xcode.app
+        xcodebuild -version
+
+    - name: Build project (Release)
+      run: |
+        cd USDTFlasher
+        xcodebuild clean build \
+          -project USDTFlasher.xcodeproj \
+          -scheme USDTFlasher \
+          -configuration Release \
+          -derivedDataPath build \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO \
+          ONLY_ACTIVE_ARCH=NO \
+          ARCHS="arm64 x86_64"
+
+    - name: Create Payload and IPA
+      run: |
+        mkdir -p Payload
+        APP_PATH="USDTFlasher/build/Build/Products/Release-iphoneos/USDTFlasher.app"
+        if [ -d "$APP_PATH" ]; then
+          cp -r "$APP_PATH" Payload/
+          zip -r "USDT-Flasher-$(date +'%Y%m%d-%H%M').ipa" Payload
+        else
+          echo "App not found at $APP_PATH"
+          exit 1
+        fi
+
+    - name: Upload IPA artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: USDT-Flasher-IPA
+        path: ./*.ipa
+        retention-days: 7
